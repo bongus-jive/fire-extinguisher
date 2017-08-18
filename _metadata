@@ -1,7 +1,7 @@
 {
-  "version" : "1.0",
+  "version" : "1.0.1",
   "author" : "patman",
-  "description" : "its an inside joke okay\n\nAdds a fire extinguisher that kills things. thats it.\nuse \"/spawnitem pk-mitchell\" to get it.",
+  "description" : "its an inside joke okay\n\nAdds a fire extinguisher that kills things. thats it.\n\ncraft it with your bare hands with one of those fire extinguishers found in those mini snow outposts or whatever or use \"/spawnitem pk-mitchell\"",
   "name" : "PULLING A MITCHELL",
   "friendlyName" : "PULLING A MITCHELL",
   "steamContentId" : "1114594366",

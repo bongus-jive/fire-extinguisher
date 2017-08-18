@@ -1,0 +1,10 @@
+{
+  "input" : [  
+    { "item" : "fireextinguisher", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "pk-mitchell",
+    "count" : 1
+  },
+  "groups" : [ "plain", "all" ]
+}
