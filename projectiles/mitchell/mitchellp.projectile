@@ -1,0 +1,19 @@
+{
+  "projectileName" : "mitchellp",
+  "image" : "mitchellp.png",
+  "physics" : "flame",
+  "animationCycle" : 1,
+  "animationLoops" : false,
+  "frameNumber" : 12,
+  "winddownFrames" : 3,
+  "intangibleWinddown" : true,
+  "power" : 50,
+  "speed" : 30,
+  "timeToLive" : 3.0,
+  "bounces" : 4,
+  "piercing" : true,
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "lightColor" : [10, 10, 10],
+  "damageKind" : "flamethrower",
+  "damageKindImage" : "/interface/statuses/fire.png"
+}

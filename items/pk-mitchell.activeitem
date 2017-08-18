@@ -1,0 +1,45 @@
+{
+  "itemName" : "pk-mitchell",
+  "level" : 6,
+  "price" : 1500,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "LETS JUST SPRAY THIS RANDOM FIRE EXTINGUISHER IN THIS BUILDING AND SET OFF AN ALARM",
+  "shortdescription" : "Fire Extinguisher",
+  "tooltipKind" : "gun",
+  "category" : "uniqueWeapon",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","ranged"],
+
+  "inventoryIcon" : "pk-mitchell.png",
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "/items/pk-mitchell.png",
+    "barrel" : "",
+    "muzzleFlash" : ""
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fireStart" : [ "/sfx/gun/flamethrower_start.ogg" ],
+      "fireLoop" : [ "/sfx/gun/flamethrower_loop.ogg" ],
+      "fireEnd" : [ "/sfx/gun/flamethrower_stop.ogg" ]
+    }
+  },
+  "baseOffset" : [0.75, 0],
+  "muzzleOffset" : [0.9, 1.1],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "flamethrower",
+  "primaryAbility" : {
+    "baseDps" : 100,
+    "energyUsage" : 1,
+    "projectileType" : "mitchellp"
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}
