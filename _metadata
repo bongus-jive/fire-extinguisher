@@ -2,8 +2,8 @@
   "version" : "1.0",
   "author" : "patman",
   "description" : "its an inside joke okay\n\nAdds a fire extinguisher that kills things. thats it.\nuse \"/spawnitem pk-mitchell\" to get it.",
-  "name" : "PULLING A MITCHEL",
-  "friendlyName" : "PULLING A MITCHEL",
+  "name" : "PULLING A MITCHELL",
+  "friendlyName" : "PULLING A MITCHELL",
   "steamContentId" : "1114594366",
   "link" : "steam://url/CommunityFilePage/1114594366"
 }
