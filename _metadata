@@ -1,9 +1,10 @@
 {
-  "version" : "1.0.2",
+  "version" : "1.1",
   "author" : "patman",
-  "description" : "its an inside joke okay\n\nAdds a fire extinguisher that kills things. thats it.\n\ncraft it with your bare hands with one of those fire extinguishers found in those mini snow outposts or whatever or use \"/spawnitem pk-mitchell\"",
-  "name" : "PULLING A MITCHELL",
-  "friendlyName" : "PULLING A MITCHELL",
+  "tags" : "Weapons",
+  "description" : "one of my lads stole a fire extinguisher and sprayed it like a dingus\nyes\n\nAdds a fire extinguisher that kills thing\n\nmake at hand",
+  "name" : "fire extinguisher",
+  "friendlyName" : "fire extinguisher",
   "steamContentId" : "1114594366",
   "link" : "steam://url/CommunityFilePage/1114594366"
 }
