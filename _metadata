@@ -1,9 +1,9 @@
 {
-  "version" : "1.1",
+  "version" : "1.2",
   "author" : "patman",
   "tags" : "Weapons",
   "description" : "old friend stole a fire extinguisher and sprayed it because funny\n\nits like the flamethrower but with, fire extinguish juices (?)\n\nmake at hand",
-  "name" : "fire extinguisher",
+  "name" : "pat_fireextinguisher",
   "friendlyName" : "fire extinguisher",
   "steamContentId" : "1114594366",
   "link" : "steam://url/CommunityFilePage/1114594366"
