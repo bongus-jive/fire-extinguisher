@@ -1,6 +1,6 @@
 {
-  "projectileName" : "mitchellp",
-  "image" : "mitchellp.png",
+  "projectileName" : "pat_fireextinguisher",
+  "image" : "projectile.png",
   "physics" : "flame",
   "animationCycle" : 1,
   "animationLoops" : false,
@@ -13,7 +13,5 @@
   "bounces" : 4,
   "piercing" : true,
   "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
-  "lightColor" : [10, 10, 10],
-  "damageKind" : "iceplasma",
-  "damageKindImage" : "/interface/statuses/frozen.png"
+  "damageKind" : "iceplasma"
 }

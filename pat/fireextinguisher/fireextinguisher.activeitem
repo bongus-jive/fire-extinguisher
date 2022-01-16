@@ -1,5 +1,5 @@
 {
-  "itemName" : "pk-mitchell",
+  "itemName" : "pat_fireextinguisher",
   "level" : 6,
   "price" : 1500,
   "maxStack" : 1,
@@ -11,12 +11,12 @@
   "twoHanded" : false,
   "itemTags" : ["weapon","ranged"],
 
-  "inventoryIcon" : "pk-mitchell.png",
+  "inventoryIcon" : "fireextinguisher.png",
 
   "animation" : "/items/active/weapons/ranged/gun.animation",
   "animationParts" : {
     "butt" : "",
-    "middle" : "/items/pk-mitchell.png",
+    "middle" : "/items/fireextinguisher.png",
     "barrel" : "",
     "muzzleFlash" : ""
   },
@@ -38,7 +38,7 @@
   "primaryAbility" : {
     "baseDps" : 100,
     "energyUsage" : 1,
-    "projectileType" : "mitchellp"
+    "projectileType" : "pat_fireextinguisher"
   },
 
   "builder" : "/items/buildscripts/buildunrandweapon.lua"

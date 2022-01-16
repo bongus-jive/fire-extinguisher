@@ -3,7 +3,7 @@
     { "item" : "fireextinguisher", "count" : 1 }
   ],
   "output" : {
-    "item" : "pk-mitchell",
+    "item" : "pat_fireextinguisher",
     "count" : 1
   },
   "groups" : [ "plain", "all" ]
