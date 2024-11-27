@@ -1,10 +1,11 @@
 {
-  "version" : "1.2",
   "author" : "patman",
-  "tags" : "Weapons",
-  "description" : "old friend stole a fire extinguisher and sprayed it because funny\n\nits like the flamethrower but with, fire extinguish juices (?)\n\nmake at hand",
-  "name" : "pat_fireextinguisher",
+  "description" : "adds a fire extinguisher. its kindve just a bad flamethrower that does ice damage\nmake at hand",
   "friendlyName" : "fire extinguisher",
+  "link" : "steam://url/CommunityFilePage/1114594366",
+  "name" : "pat_fireextinguisher",
   "steamContentId" : "1114594366",
-  "link" : "steam://url/CommunityFilePage/1114594366"
+  "steamDescription" : "adds a fire extinguisher. its kindve just a flamethrower that does ice damage\n\nmake at hand\n\n\n[img]https://i.imgur.com/wXjYMqP.gif[/img]https://discord.gg/GdsQSgV\n[img]https://i.imgur.com/uyG8oTa.gif[/img]https://www.patreon.com/pathiccstar\n[img]https://i.imgur.com/xVfcRRH.gif[/img]https://ko-fi.com/patmanf\n[img]https://i.imgur.com/jJAj6jF.gif[/img]https://github.com/bongus-jive/fire-extinguisher\n\n\nthis mod was supposed to be a joke but i kindve removed the entire joke part. whoops",
+  "tags" : "Weapons",
+  "version" : "1.2.1"
 }
