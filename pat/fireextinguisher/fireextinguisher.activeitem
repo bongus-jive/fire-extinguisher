@@ -1,45 +1,45 @@
 {
-  "itemName" : "pat_fireextinguisher",
-  "level" : 6,
-  "price" : 1500,
-  "maxStack" : 1,
-  "rarity" : "Legendary",
-  "description" : "funy",
-  "shortdescription" : "Fire Extinguisher",
-  "tooltipKind" : "gun",
-  "category" : "uniqueWeapon",
-  "twoHanded" : false,
-  "itemTags" : ["weapon","ranged"],
+  "itemName": "pat_fireextinguisher",
+  "level": 6,
+  "price": 1500,
+  "maxStack": 1,
+  "rarity": "Legendary",
+  "description": "funy",
+  "shortdescription": "Fire Extinguisher",
+  "tooltipKind": "gun",
+  "category": "uniqueWeapon",
+  "twoHanded": false,
+  "itemTags": [ "weapon", "ranged" ],
 
-  "inventoryIcon" : "fireextinguisher.png",
+  "inventoryIcon": "fireextinguisher.png",
 
-  "animation" : "/items/active/weapons/ranged/gun.animation",
-  "animationParts" : {
-    "butt" : "",
-    "middle" : "fireextinguisher.png",
-    "barrel" : "",
-    "muzzleFlash" : ""
+  "animation": "/items/active/weapons/ranged/gun.animation",
+  "animationParts": {
+    "butt": "",
+    "middle": "fireextinguisher.png",
+    "barrel": "",
+    "muzzleFlash": ""
   },
-  "animationCustom" : {
-    "sounds" : {
-      "fireStart" : [ "/sfx/gun/flamethrower_start.ogg" ],
-      "fireLoop" : [ "/sfx/gun/flamethrower_loop.ogg" ],
-      "fireEnd" : [ "/sfx/gun/flamethrower_stop.ogg" ]
+  "animationCustom": {
+    "sounds": {
+      "fireStart": [ "/sfx/gun/flamethrower_start.ogg" ],
+      "fireLoop": [ "/sfx/gun/flamethrower_loop.ogg" ],
+      "fireEnd": [ "/sfx/gun/flamethrower_stop.ogg" ]
     }
   },
-  "baseOffset" : [0.75, 0],
-  "muzzleOffset" : [0.9, 1.1],
+  "baseOffset": [ 0.75, 0 ],
+  "muzzleOffset": [ 0.9, 1.1 ],
 
-  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  "scripts": [ "/items/active/weapons/ranged/gun.lua" ],
 
-  "elementalType" : "ice",
+  "elementalType": "ice",
 
-  "primaryAbilityType" : "flamethrower",
-  "primaryAbility" : {
-    "baseDps" : 100,
-    "energyUsage" : 1,
-    "projectileType" : "pat_fireextinguisher"
+  "primaryAbilityType": "flamethrower",
+  "primaryAbility": {
+    "baseDps": 100,
+    "energyUsage": 1,
+    "projectileType": "pat_fireextinguisher"
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder": "/items/buildscripts/buildunrandweapon.lua"
 }

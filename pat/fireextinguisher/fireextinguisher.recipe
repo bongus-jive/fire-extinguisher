@@ -1,10 +1,7 @@
 {
-  "input" : [  
-    { "item" : "fireextinguisher", "count" : 1 }
+  "input": [
+    { "item": "fireextinguisher", "count": 1 }
   ],
-  "output" : {
-    "item" : "pat_fireextinguisher",
-    "count" : 1
-  },
-  "groups" : [ "plain", "all" ]
+  "output": { "item": "pat_fireextinguisher", "count": 1 },
+  "groups": [ "plain", "all" ]
 }
