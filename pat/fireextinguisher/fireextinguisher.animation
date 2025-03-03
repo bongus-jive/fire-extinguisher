@@ -1,0 +1,34 @@
+{
+  "globalTagDefaults": {},
+
+  "animatedParts": {
+    "parts": {
+      "tank": {
+        "properties": {
+          "zLevel": 1,
+          "image": "<partImage>",
+          "transformationGroups": [ "tank" ]
+        }
+      },
+      "hose": {
+        "properties": {
+          "zLevel": -1,
+          "offset": [ 0.0625, 0 ],
+          "image": "<partImage>",
+          "transformationGroups": [ "hose" ]
+        }
+      }
+    }
+  },
+
+  "transformationGroups": {
+    "tank": { },
+    "hose": { }
+  },
+
+  "sounds": {
+    "fireStart": [ "/sfx/gun/flamethrower_start.ogg" ],
+    "fireLoop": [ "/sfx/gun/flamethrower_loop.ogg" ],
+    "fireEnd": [ "/sfx/gun/flamethrower_stop.ogg" ]
+  }
+}

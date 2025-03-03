@@ -8,38 +8,70 @@
   "shortdescription": "Fire Extinguisher",
   "tooltipKind": "gun",
   "category": "uniqueWeapon",
-  "twoHanded": false,
+  "twoHanded": true,
   "itemTags": [ "weapon", "ranged" ],
 
-  "inventoryIcon": "fireextinguisher.png",
+  "inventoryIcon": "images/icon.png",
+  "tooltipFields": {
+    "objectImage": "/pat/fireextinguisher/images/objectImage.png",
+    "damageKindImage": "/interface/elements/ice.png",
+    "energyPerShotTitleLabel": "Energy Per Second:"
+  },
 
-  "animation": "/items/active/weapons/ranged/gun.animation",
+  "animation": "fireextinguisher.animation",
   "animationParts": {
-    "butt": "",
-    "middle": "fireextinguisher.png",
-    "barrel": "",
-    "muzzleFlash": ""
+    "tank": "images/tank.png",
+    "hose": "images/hose.png"
   },
-  "animationCustom": {
-    "sounds": {
-      "fireStart": [ "/sfx/gun/flamethrower_start.ogg" ],
-      "fireLoop": [ "/sfx/gun/flamethrower_loop.ogg" ],
-      "fireEnd": [ "/sfx/gun/flamethrower_stop.ogg" ]
-    }
-  },
-  "baseOffset": [ 0.75, 0 ],
-  "muzzleOffset": [ 0.9, 1.1 ],
 
-  "scripts": [ "/items/active/weapons/ranged/gun.lua" ],
+  "scripts": [ "fireextinguisher.lua" ],
+
+  "baseOffset": [ 0, -0.75 ],
+  "muzzleOffset": [ 0.875, 0.125 ],
 
   "elementalType": "ice",
 
-  "primaryAbilityType": "flamethrower",
-  "primaryAbility": {
-    "baseDps": 100,
-    "energyUsage": 1,
-    "projectileType": "pat_fireextinguisher"
+  "scriptConfig": {
+    "cursor": "/cursors/reticle0.cursor",
+    "tankRotationCenter": [ 0.0625, 0.125 ],
+    "tankRotationSpeed": 12,
+    "stances": {
+      "idle": {
+        "armRotation": -3,
+        "weaponRotation": 3,
+        "twoHanded": true,
+        "allowFlip": true,
+        "allowRotate": true
+      }
+    }
   },
 
-  "builder": "/items/buildscripts/buildunrandweapon.lua"
+  "primaryAbility": {
+    "scripts": [ "/pat/fireextinguisher/spray.lua" ],
+    "class": "ExtinguisherSpray",
+
+    "baseDps": 5,
+    "fireTime": 0.02,
+    "energyUsage": 30,
+    "inaccuracy": 0.08,
+
+    "projectileType": "pat_fireextinguisher",
+    "projectileParameters": {
+      "speed": [ 15, 30 ]
+    },
+
+    "stances": {
+      "fire": {
+        "duration": 0.05,
+        "armRotation": -4.5,
+        "weaponRotation": 6,
+        "weaponOffset": [ -0.06, 0.02 ],
+        "twoHanded": true,
+        "allowFlip": true,
+        "allowRotate": true
+      }
+    }
+  },
+
+  "builder": "/pat/fireextinguisher/builder.lua"
 }
