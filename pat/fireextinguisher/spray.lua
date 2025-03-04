@@ -4,10 +4,6 @@ require "/scripts/vec2.lua"
 ExtinguisherSpray = {}
 setmetatable(ExtinguisherSpray, extend(WeaponAbility))
 
-function ExtinguisherSpray:init()
-  self.weapon:setStance(self.stances.idle)
-end
-
 function ExtinguisherSpray:update(dt, fireMode, shiftHeld)
   WeaponAbility.update(self, dt, fireMode, shiftHeld)
 
@@ -26,7 +22,7 @@ function ExtinguisherSpray:firing()
   while self.fireMode == self.abilitySlot and status.overConsumeResource("energy", self.energyUsage * self.dt) do
     if stanceProgress < 1 then
       stanceProgress = math.min(1, stanceProgress + self.dt / self.stances.fire.duration)
-      self:lerpStance(stanceProgress, self.stances.idle, self.stances.fire)
+      self.weapon:lerpStance(stanceProgress, self.stances.idle, self.stances.fire)
     end
 
     if cooldown > 0 then
@@ -44,7 +40,7 @@ function ExtinguisherSpray:firing()
 
   while stanceProgress > 0 do
     stanceProgress = math.max(0, stanceProgress - self.dt / self.stances.fire.duration)
-    self:lerpStance(stanceProgress, self.stances.idle, self.stances.fire)
+    self.weapon:lerpStance(stanceProgress, self.stances.idle, self.stances.fire)
     coroutine.yield()
   end
 end
@@ -79,10 +75,4 @@ end
 
 function ExtinguisherSpray:damageMultiplier()
   return activeItem.ownerPowerMultiplier() * self.weapon.damageLevelMultiplier
-end
-
-function ExtinguisherSpray:lerpStance(ratio, stanceFrom, stanceTo)
-  self.weapon.weaponOffset = vec2.lerp(ratio, stanceFrom.weaponOffset or {0, 0}, stanceTo.weaponOffset or {0, 0})
-  self.weapon.relativeArmRotation = util.toRadians(util.lerp(ratio, stanceFrom.armRotation, stanceTo.armRotation))
-  self.weapon.relativeWeaponRotation = util.toRadians(util.lerp(ratio, stanceFrom.weaponRotation, stanceTo.weaponRotation))
 end

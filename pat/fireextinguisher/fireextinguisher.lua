@@ -30,6 +30,7 @@ function init()
   self.weapon.onLeaveAbility = function()
     self.weapon:setStance(self.stances.idle)
   end
+  self.weapon:setStance(self.stances.idle)
 
   self.weapon:init()
 end
@@ -50,6 +51,12 @@ function ExtinguisherWeapon:addTransformationGroup(name, offset, rotation, rotat
   local group = {name = name, offset = offset, rotation = rotation, rotationCenter = rotationCenter}
   self.transformationGroups[name] = group
   return group
+end
+
+function ExtinguisherWeapon:lerpStance(ratio, stanceFrom, stanceTo)
+  self.weaponOffset = vec2.lerp(ratio, stanceFrom.weaponOffset or {0, 0}, stanceTo.weaponOffset or {0, 0})
+  self.relativeArmRotation = util.toRadians(util.lerp(ratio, stanceFrom.armRotation, stanceTo.armRotation))
+  self.relativeWeaponRotation = util.toRadians(util.lerp(ratio, stanceFrom.weaponRotation, stanceTo.weaponRotation))
 end
 
 WeaponAbility.init = WeaponAbility.init or function() end
